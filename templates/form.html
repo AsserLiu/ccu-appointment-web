@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>中正大學門診預約 - 預約</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/skel-layers.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/init.js') }}"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/skel.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style-xlarge.css') }}" />
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="index.html">CCU</a></h1>
+				<nav id="nav">
+					<ul>
+							<li><a href="index.html">首頁</a></li>
+							<li><a href="就診須知.html">就診須知</a></li>
+							<li><a href="門診時間.html">門診時間</a></li>
+							<li><a href="服務介紹.html">服務介紹</a></li>
+							<li><a href="form.html" class="button special" style="background-color:#FF8888">我要預約</a></li>
+						</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<section id="main" class="wrapper style1">
+				<header class="major">
+                    <h2>門診預約</h2>
+				</header>    
+              <!-- Form -->
+                <form action="deal.py" method="post">
+                    <div class="container">
+                        <section>
+                            <h3>名字：</h3><input name="name" type="text" size=10 maxlength=20></br>
+                            <h3>學號：</h3><input name="studentid" type="text" size=9 maxlength=9><P>
+                            <h3>性別：</h3><select name="sex" size="1">
+                                        <option value="male">男性</option>
+                                        <option value="female">女性</option></select><P>
+                            <h3>看診科別：</h3><select name="dept" size="1">
+                                        <option value="chinese">中醫</option>
+                                        <option value="family">家醫科</option></select><P>
+                            <h3>預約時段：(星期日為一個禮拜的開始)</h3><select name="time" size="1">
+                                        <option value="TUE">星期二</option>
+                                        <option value="THU">星期四</option>
+										<option value="next_TUE">下星期二</option>
+										<option value="next_THU">下星期四</option></select><P>
+                            <h3>E-mail:</h3><input name="email" type="text"></br>
+			    <h3>手機:</h3><input name="cellphone" type="text" maxlength=10></br>
+                <input type="submit" style="background-color:#FF8888" value="確定預約">
+                <input type="reset" class="button alt" style="background-color: #FFFFFF" value="重新輸入">
+                </section>
+                </FORM>
+            </section>
+		<!-- Footer -->
+		<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<div class="6u">
+							<div class="row collapse-at-2">
+								<div class="6u">
+									<h2>Related links</h2>
+									<ul class="alt">
+											<li><a href="http://healthcare.ccu.edu.tw:5555/">健康e點通</a></li>
+											<li><a href="https://www.cdc.gov.tw/?aspxerrorpath=/diseaseinfo.aspx">狂犬病專區</a></li>
+										</ul>
+									</div>
+									<div class="6u">
+										<h2>　</h2>
+										<ul class="alt">
+											<li><a href="http://studaffbh.ccu.edu.tw/ezfiles/2/1002/pictures/961/part_11401_2129912_50782.png">校園AED位置</a></li>
+											<li><a href="http://studaffbh.ccu.edu.tw/files/11-1002-537.php">傳染病防疫專區</a></li>
+										</ul>
+								</div>
+							</div>
+						</div>
+						<div class="6u">
+							<h2>Health Center</h2>
+							<p>[621] 嘉義縣民雄鄉大學路168號 (05)2720411</br>
+								168, University Rd. Min-Hsiung Chia-Yi, Taiwan, R.O.C.
+							</p>
+						</div>
+					</div>
+				</div>
+				</div>
+			</footer>
+
+	</body>
+</html>

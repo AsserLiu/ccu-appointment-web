@@ -1,0 +1,91 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>中正大學門診預約 - 門診時間</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+		<script src="{{url_for('static',filename='js/skel.min.js')}}"></script>
+		<script src="{{url_for('static',filename='js/skel-layers.min.js')}}"></script>
+		<script src="{{url_for('static',filename='js/init.js')}}"></script>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/skel.css')}}" />
+		<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+		<link rel="stylesheet" href="{{url_for('static',filename='css/style-xlarge.css')}}" />
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="index.html">CCU</a></h1>
+				<nav id="nav">
+					<ul>
+							<li><a href="index.html">首頁</a></li>
+							<li><a href="imformation.html">就診須知</a></li>
+							<li><a href="time.html">門診時間</a></li>
+							<li><a href="service.html">服務介紹</a></li>
+							<li><a href="form.html" class="button special" style="background-color:#FF8888">我要預約</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper style1">
+				<header class="major">
+					<h2>門診時間</h2>
+					<p></p>
+				</header>
+				<div class="container">
+					<section>
+						<h2>中醫門診時間</h2>
+						<img src="{{url_for('static',filename='images/Ctime.png')}}" alt="中醫門診時間">
+						<p>※若有變動將另行於衛生保健組公佈欄公告</p>
+
+					</br></br></br>
+						<h2>家醫科門診時間</h2>
+						<img src="{{url_for('static',filename='images/Ftime.png')}}" alt="家醫科門診時間">
+						<p>備註：</br></br>
+							1、家庭醫學科醫師諮詢服務時段，恕不提供給藥服務。</br></br>
+							2、領藥請於每週二、四，下午16:30~17:00至衛生保健組，將由藥師親自給藥，逾時視同放棄。（依藥師法及藥事法規定）</br></br>
+							3、上述門診服務時段配合上班日實施，如有異動以網頁與健康中心公告為準。
+						</p>
+
+					</section>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<div class="6u">
+							<div class="row collapse-at-2">
+								<div class="6u">
+									<h2>Related links</h2>
+									<ul class="alt">
+											<li><a href="http://healthcare.ccu.edu.tw:5555/">健康e點通</a></li>
+											<li><a href="https://www.cdc.gov.tw/?aspxerrorpath=/diseaseinfo.aspx">狂犬病專區</a></li>
+										</ul>
+									</div>
+									<div class="6u">
+										<h2>　</h2>
+										<ul class="alt">
+											<li><a href="http://studaffbh.ccu.edu.tw/ezfiles/2/1002/pictures/961/part_11401_2129912_50782.png">校園AED位置</a></li>
+											<li><a href="http://studaffbh.ccu.edu.tw/files/11-1002-537.php">傳染病防疫專區</a></li>
+										</ul>
+								</div>
+							</div>
+						</div>
+						<div class="6u">
+							<h2>Health Center</h2>
+							<p>[621] 嘉義縣民雄鄉大學路168號 (05)2720411</br>
+								168, University Rd. Min-Hsiung Chia-Yi, Taiwan, R.O.C.
+							</p>
+						</div>
+					</div>
+				</div>
+				</div>
+			</footer>
+
+	</body>
+</html>
